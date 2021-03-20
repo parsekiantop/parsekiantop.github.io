@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+  <html lang ="pt-br">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widht=devide-width, initial-scale=1.0">
+  <meta name="author" content="Fernanda Parsekian">
+  <link rel = "stylesheet" href = "style.css">
+  <title>
+      Fernanda Parsekian
+  </title>
+  </head>
+  <body class = "escuro">
+    <script src = "jquery-3.5.1.min.js"></script>
+  <header> 
+  <div><img id = "minha foto" src = "imagens/fernanda.jpg" width="200" height="200"/></div>
+            <h1> 
+        Fernanda Parsekian
+           </h1> 
+            <h2>
+           Técnica de Informática
+           </h2> 
+          </header>
+    <main> 
+    <article>
+    <section>
+      <section class = "controles">
+        <button id = "acender">Modo claro<button>
+           <button id = "escuro">Modo escuro<button>
+             <section>
+           <h3>
+           Histórico Acadêmico
+           </h3>
+           <h4> 
+             Ensino Fundamental
+           </h4>
+           <p>
+            ESCOLA ESTADUAL PROFESSOR RÔMULO PERO 
+           <br>
+Completou em dezembro de 2017. Obteve as notas mais altas, mantida em ranking escolar, variando entre primeiro e segundo lugar, comparada à escola.   
+           </p>
+           <h4>
+             Ensino Médio
+           </h4>
+            <p>
+             INSTITUTO FEDERAL DE CIÊNCIA, TECNOLOGIA E EDUCAÇÃO DE SÃO PAULO
+             <br>
+Em progresso, com formação no segundo semestre do ano de 2021.
+            </p>
+         </section>
+         <section>
+            <h3>
+              CONHECIMENTOS EM INFORMÁTICA 
+            </h3>
+        <ul>
+          <li>
+            Pacote office - intermediário
+          </li>
+          <li>
+          Microsoft Windows - intermediário
+          </li>
+        </ul>
+          <h4>
+          CONHECIMENTOS ESPECÍFICOS EM INFORMÁTICA 
+          </h4>  
+          <ul>
+          <li>
+         Linguagem de Consulta estruturada-SQL - intermediário
+          </li>
+          <li>
+        Linguagem de programação C - intermediário
+          </li>
+          <li>
+        Linguagem de programação Java - cursando 
+          </li>
+          <li>
+        Linguagem de programação C# - cursando 
+          </li>
+          <li> 
+        Redes Computacionais - intermediário
+        </li>
+        <li> 
+        Desenvolvimento web (HTML,CSS,JAVASCRIPT) - cursando
+        </li>
+        </ul>
+         </section>
+         <section>
+         <h3>
+           ATIVIDADES COMPLEMENTARES
+         </h3>
+           <ul>
+           <li>
+           Participação no evento Innovation Camp.
+           </li>
+           <li>
+Participação no desenvolvimento do jogo “COMPBR”.
+           </li>
+           <li>
+Participação no desenvolvimento do projeto “repassaí”.
+           </li>
+           </ul>
+         </section>
+         <section>
+           <h3>
+             EXPERIÊNCIA PROFISSIONAL
+           </h3>
+             ESTAGIÁRIA - TRIBUNAL REGIONAL FEDERAL DA 3 REGIÃO 
+             <p>
+Auxiliar na manutenção, manipulação e atualização da estrutura de banco de dados  e página web do estabelecimento em questão, oferecendo suporte também para outras atividades ocasionais relacionadas à informática.
+         </p>
+         </section>
+        </article>
+        </main>
+    </body>
+
+    <script type="text/javascript">
+    var foto = document.getElementById("minha foto");
+    foto.onmouseover = function(){
+        foto.classList.remove("foto_sem_mouse");
+        foto.classList.add("foto_com_mouse");
+    }
+    
+    foto.onmouseout = function(){
+        foto.classList.remove("foto_com_mouse");
+        foto.classList.add("foto_sem_mouse");
+    }
+</script>
+
+<script>
+    $(document).ready(function(){
+
+        $("#acender").click(function(){
+            $("body").removeClass("escuro");
+            $("body").addClass("acender");
+       });
+
+       $("#escuro").click(function(){
+            $("body").removeClass("acender");
+            $("body").addClass("escuro");
+       });
+    });
+</script>
+</html>

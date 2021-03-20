@@ -1,0 +1,55 @@
+.foto_com_mouse {
+    width: 250px;
+    height: 250px;
+    transition: 0.3s;
+  }
+  .foto_sem_mouse {
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+  }
+  .escuro {
+    background-color: #333;
+    color: #eee;
+  }
+  .acender {
+    background-color:#eee;
+    color: #333;
+  }
+
+  h1{
+    text-align: center;
+    color:#F5BCA9;
+    font-size:80px;
+    font-family: verdana;
+}
+
+h2{
+    font-family:sans-serif;
+    text-align: center;
+    color:#F5BCA9;
+    font-size: 30px;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    font-family: Verdana;
+    color: black;
+}
+
+
+p{ 
+    font-family:sans-serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
+li{
+    font-family: sans-serif;
+}
+
+div{
+    text-align: center;
+}
+
